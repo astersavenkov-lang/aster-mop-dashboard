@@ -1,0 +1,6 @@
+requirements.txt
+flask==3.0.0
+flask-cors==4.0.0
+python-telegram-bot==20.7
+openpyxl==3.1.2
+gunicorn==21.2.0

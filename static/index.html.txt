@@ -1,0 +1,19 @@
+Добавить в <head> файла index.html
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script>
+// Переключаем на серверное хранилище вместо localStorage
+const API = '';  // оставь пустым — будет относительный путь
+
+async function getH() {
+  const r = await fetch(API + '/api/history');
+  return await r.json();
+}
+
+async function saveSnap(date, label, branches) {
+  // Загрузка идёт через /api/upload
+}
+
+async function delSnap(date) {
+  await fetch(API + '/api/snapshot/' + date, {method: 'DELETE'});
+}
+</script>
